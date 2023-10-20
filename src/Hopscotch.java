@@ -29,13 +29,20 @@ public class Hopscotch {
             if (j <= 1)
             {
                 S[j] = coolerHopscotchArray[j];
-            } else if (j == 3) {
+            } else if (j == 2) {
                 S[j] = coolerHopscotchArray[j] + S[j - 2];
             }
-            else if (j > 3) {
+            else if (j > 2) {
                 S[j] = Math.max(coolerHopscotchArray[j] + S[j-2], coolerHopscotchArray[j] + S[j - 3]);
             }
         }
+
+//        for(int i =0; i < sizeOfData - 2; i++)
+//        {
+//            System.out.println(S[i]);
+//        }
+
+        System.out.println(S[sizeOfData - 2 - 1] + hopscotchArray[0]);
         scanner.close();
     }
 
