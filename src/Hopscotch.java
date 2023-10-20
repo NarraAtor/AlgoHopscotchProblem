@@ -42,7 +42,7 @@ public class Hopscotch {
 //            System.out.println(S[i]);
 //        }
 
-        System.out.println(S[sizeOfData - 2 - 1] + hopscotchArray[0]);
+        System.out.println(Math.max(S[sizeOfData - 2 - 1], S[sizeOfData - 2 - 2])+ hopscotchArray[0]);
         scanner.close();
     }
 
